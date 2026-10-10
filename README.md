@@ -5,6 +5,8 @@
 
 The official [VPNDetection](https://vpndetection.io) plugin for [ChatGPT](https://chatgpt.com) and [Codex](https://developers.openai.com/codex).
 
+Ask whether an IP address belongs to a VPN, a residential, datacenter or mobile proxy, a Tor node, a public relay, a hosting provider or a CDN, and look into any of the VPNDetection databases and which ones your organization holds.
+
 ## Getting Started
 
 In Codex:
@@ -15,21 +17,32 @@ codex plugin add vpndetection@vpndetection
 codex mcp login vpndetection
 ```
 
-The last line signs you in with your VPNDetection account, where you pick the API key Codex should use. Codex never sees the key: our MCP server uses it on your behalf. The Codex CLI, its IDE extension and Codex in the ChatGPT desktop app read the same configuration, so one install covers all three.
+The last line signs you in with your VPNDetection account, where you pick the API key Codex should use. Codex never sees the key: our MCP server uses it on your behalf, and requests count against that key's plan like any other API call. The Codex CLI, its IDE extension and Codex in the ChatGPT desktop app read the same configuration, so one install covers all three. You need a VPNDetection account for this; the free plan works, and returns `ip` and `is_vpn`.
 
 To disconnect Codex, run `codex mcp logout vpndetection`, or remove it under Connected applications at https://app.vpndetection.io/settings/account/sessions. Access ends within about a minute.
 
 ## What's in it
 
-- The VPNDetection MCP server at `https://mcp.vpndetection.io/mcp`.
+- The VPNDetection MCP server at `https://mcp.vpndetection.io/mcp`, with seven read-only tools: `lookup_ip`, `lookup_ips`, `my_entitlement`, `list_databases`, `database_metadata`, `database_checksum` and `list_downloads`.
+- Four skills that say how to use them well:
+  - `check-ips` checks one address or a list, and reads the result's `coverage` so a field your plan doesn't include is never reported as a "no".
+  - `review-traffic` screens a signup, login or order export and keeps each verdict next to the record it came from.
+  - `database-files` answers which databases you hold, how big they are, whether your copy is intact and why a download failed.
+  - `analyze-database` explains a database's columns and sample rows, and in Codex analyzes a downloaded copy.
+
+## Try it
+
+- "Is 45.83.91.1 a VPN?"
+- "Here's yesterday's signup export. Which accounts came from proxies or Tor?"
+- "Which databases are we licensed for, and how big is the latest VPN build?"
 
 ## What it sends
 
-The plugin runs nothing on your machine. Codex sends what you ask about to `https://mcp.vpndetection.io/mcp`, which calls the VPNDetection API with the key you picked and returns the answer. Each request is logged against that key as any API call is. Our privacy policy is at https://vpndetection.io/privacy, and questions go to support@vpndetection.io.
+The plugin runs nothing on your machine. Codex sends the IP addresses and database ids you ask about to `https://mcp.vpndetection.io/mcp`, which calls the VPNDetection API with the key you picked and returns the answer. Each request is logged against that key as any API call is. Our privacy policy is at https://vpndetection.io/privacy, and questions go to support@vpndetection.io.
 
 ## Other Libraries
 
-There are official VPNDetection client libraries available for many languages including PHP, Python, Go, Java, and Ruby. See our GitHub at https://github.com/vpndetection-io for more.
+There are official VPNDetection client libraries available for many languages including PHP, Python, Go, Java, Ruby, and many popular frameworks such as Django, Rails, and Laravel. See our GitHub at https://github.com/vpndetection-io for more.
 
 ## About VPNDetection
 
