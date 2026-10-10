@@ -1,0 +1,20 @@
+{
+  "name": "vpndetection",
+  "interface": {
+    "displayName": "VPNDetection"
+  },
+  "plugins": [
+    {
+      "name": "vpndetection",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Data & Analytics"
+    }
+  ]
+}
