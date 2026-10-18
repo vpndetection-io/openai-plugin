@@ -17,7 +17,7 @@ codex plugin add vpndetection@vpndetection
 codex mcp login vpndetection
 ```
 
-The last line signs you in with your VPNDetection account, where you pick the API key Codex should use. Codex never sees the key: our MCP server uses it on your behalf, and requests count against that key's plan like any other API call. The Codex CLI, its IDE extension and Codex in the ChatGPT desktop app read the same configuration, so one install covers all three. You need a VPNDetection account for this; the free plan works, and returns `ip` and `is_vpn`.
+The last line signs you in with your VPNDetection account, where you pick the API key Codex should use. Codex never sees the key: our MCP server uses it on your behalf, and requests count against that key's plan like any other API call. The database tools need a key with the `db.download` scope, which your organization's `Default` key has. The Codex CLI, its IDE extension and Codex in the ChatGPT desktop app read the same configuration, so one install covers all three. You need a VPNDetection account for this; the free plan works, and returns `ip` and `is_vpn`.
 
 To disconnect Codex, run `codex mcp logout vpndetection`, or remove it under Connected applications at https://app.vpndetection.io/settings/account/sessions. Access ends within about a minute.
 
