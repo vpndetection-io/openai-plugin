@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "vpndetection",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Check IP addresses for VPNs, residential, datacenter and mobile proxies, Tor, public relays, hosting and CDNs, and look into the VPNDetection databases and which ones your organization holds.",
   "author": {
     "name": "VPNDetection",
