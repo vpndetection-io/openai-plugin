@@ -2,6 +2,12 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.1.1 - 2026-10-19
+
+### Fixes
+
+- Name public proxies and web gateways in the descriptions ([`4a5b0c0`](https://github.com/vpndetection-io/openai-plugin/commit/4a5b0c00a815e5ec36aa69fa9d4a14f78b928e9d))
+
 ## 1.1.0 - 2026-10-18
 
 ### Features
