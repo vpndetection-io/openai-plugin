@@ -5,7 +5,7 @@
 
 The official [VPNDetection](https://vpndetection.io) plugin for [ChatGPT](https://chatgpt.com) and [Codex](https://developers.openai.com/codex).
 
-Ask whether an IP address belongs to a VPN, a residential, datacenter or mobile proxy, a Tor node, a public relay, a hosting provider or a CDN, and look into any of the VPNDetection databases and which ones your organization holds.
+Ask whether an IP address belongs to a VPN, a residential, datacenter, mobile or public proxy, a Tor node, a privacy relay or web gateway, a hosting provider or a CDN, and look into any of the VPNDetection databases and which ones your organization holds.
 
 ## Getting Started
 
