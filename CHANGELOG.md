@@ -2,6 +2,12 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.2.0 - 2026-10-20
+
+### Features
+
+- Read location and asn when screening traffic ([`466972a`](https://github.com/vpndetection-io/openai-plugin/commit/466972aa17de7563de802e4ec15d4941ed5a40ad))
+
 ## 1.1.1 - 2026-10-19
 
 ### Fixes
