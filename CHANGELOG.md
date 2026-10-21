@@ -2,6 +2,12 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.2.1 - 2026-10-21
+
+### Fixes
+
+- Name the Open databases in the database skills ([`4dd57d6`](https://github.com/vpndetection-io/openai-plugin/commit/4dd57d60766f590d63ee710670eab55407d7a1e1))
+
 ## 1.2.0 - 2026-10-20
 
 ### Features
