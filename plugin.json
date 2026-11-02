@@ -64,7 +64,7 @@
               "description": "Describe a database",
               "prompt": "What columns are in the newest VPN IP database, and how big is it?",
               "tools_triggered": "list_databases, database_metadata",
-              "expected_behavior": "Passes the versioned id vpn_ip_v1 and describes its columns, a few sample rows, its row count and the size of each format, without downloading it."
+              "expected_behavior": "Passes the versioned ID vpn_ip_v1 and describes its columns, a few sample rows, its row count and the size of each format, without downloading it."
             }
           ],
           "negative": [
