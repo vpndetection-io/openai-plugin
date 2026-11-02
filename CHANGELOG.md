@@ -2,6 +2,12 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.2.2 - 2026-11-02
+
+### Fixes
+
+- Write ID and IDs, not id and ids ([`835b40e`](https://github.com/vpndetection-io/openai-plugin/commit/835b40ee4c9e47a631af3ddceb10fabb057964a4))
+
 ## 1.2.1 - 2026-10-21
 
 ### Fixes
