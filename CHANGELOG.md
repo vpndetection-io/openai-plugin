@@ -2,6 +2,12 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.2.4 - 2026-11-11
+
+### Fixes
+
+- Say an account needs no paid plan, not that the free plan works ([`4cfb731`](https://github.com/vpndetection-io/openai-plugin/commit/4cfb73175ead6b0dca650095b662ff7be9b49087))
+
 ## 1.2.3 - 2026-11-11
 
 ### Fixes
