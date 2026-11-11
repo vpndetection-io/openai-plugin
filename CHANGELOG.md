@@ -2,6 +2,13 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.2.3 - 2026-11-11
+
+### Fixes
+
+- Link the listing in the plugin directory ChatGPT and Codex share ([`8d4f4f8`](https://github.com/vpndetection-io/openai-plugin/commit/8d4f4f87fd2d296f52cefc3f3356d3ff1bad0838))
+- Say that ChatGPT sends the addresses and database IDs too ([`443fe75`](https://github.com/vpndetection-io/openai-plugin/commit/443fe75c422a3b73e2f7a1fb307f5f8e86510c53))
+
 ## 1.2.2 - 2026-11-02
 
 ### Fixes
