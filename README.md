@@ -9,7 +9,7 @@ Ask whether an IP address belongs to a VPN, a residential, datacenter, mobile or
 
 ## Getting Started
 
-In Codex:
+VPNDetection is in the plugin directory ChatGPT and Codex share: [add it from its listing](https://chatgpt.com/plugins/plugin_asdk_app_6accd4f290588191a74086b26d749253) and sign in when it asks. Codex also installs it from the command line:
 
 ```console
 codex plugin marketplace add vpndetection-io/openai-plugin
