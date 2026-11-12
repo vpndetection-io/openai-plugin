@@ -2,6 +2,12 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.2.6 - 2026-11-12
+
+### Fixes
+
+- The listing reads in sections, each under a heading, with bullets ([`7999e79`](https://github.com/vpndetection-io/openai-plugin/commit/7999e79054744adf0bcebf2d8debfda43a194040))
+
 ## 1.2.5 - 2026-11-12
 
 ### Fixes
