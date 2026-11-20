@@ -2,6 +2,17 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.3.0 - 2026-11-20
+
+### Features
+
+- review-traffic reads the service, carrier, satellite and company members ([`76f7c65`](https://github.com/vpndetection-io/openai-plugin/commit/76f7c6589b93ab8805131b2537c52fa5a0ba1a0c))
+
+### Fixes
+
+- README and listing: the free trial without a count ([`6ea4b97`](https://github.com/vpndetection-io/openai-plugin/commit/6ea4b9798d2aae53883ad9c8fe0b0a19485d1352))
+- Name anycast, carrier and satellite space and the servers on an address ([`1554439`](https://github.com/vpndetection-io/openai-plugin/commit/1554439f0aac95314ab4ec15ef52029ac6b9aa1c))
+
 ## 1.2.6 - 2026-11-12
 
 ### Fixes
