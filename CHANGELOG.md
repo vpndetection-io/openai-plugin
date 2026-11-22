@@ -2,6 +2,16 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.4.0 - 2026-11-22
+
+### Features
+
+- check-ips and review-traffic read is_bot and whose bot it is ([`b0a2a0b`](https://github.com/vpndetection-io/openai-plugin/commit/b0a2a0b8eefb531e11b3ae4f54b74fb9864173b8))
+
+### Fixes
+
+- Name the bots that use an address ([`ba7d460`](https://github.com/vpndetection-io/openai-plugin/commit/ba7d46099e0cece32ef79fc1140e15519b2538d9))
+
 ## 1.3.0 - 2026-11-20
 
 ### Features
