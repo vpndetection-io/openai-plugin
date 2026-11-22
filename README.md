@@ -5,7 +5,7 @@
 
 The official [VPNDetection](https://vpndetection.io) plugin for [ChatGPT](https://chatgpt.com) and [Codex](https://developers.openai.com/codex).
 
-Ask whether an IP address belongs to a VPN, a residential, datacenter, mobile or public proxy, a Tor node, a privacy relay or web gateway, a hosting provider or a CDN; whether it is anycast, or a mobile carrier's or satellite operator's space; whether an SSH, mail or web server or an open DNS resolver answered on it, or a BitTorrent client was seen on it; and look into any of the VPNDetection databases and which ones your organization holds.
+Ask whether an IP address belongs to a VPN, a residential, datacenter, mobile or public proxy, a Tor node, a privacy relay or web gateway, a hosting provider or a CDN; whether a crawler or other bot uses it, and whose; whether it is anycast, or a mobile carrier's or satellite operator's space; whether an SSH, mail or web server or an open DNS resolver answered on it, or a BitTorrent client was seen on it; and look into any of the VPNDetection databases and which ones your organization holds.
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ codex plugin add vpndetection@vpndetection
 codex mcp login vpndetection
 ```
 
-The last line signs you in with your VPNDetection account, where you pick the API key Codex should use. Codex never sees the key: our MCP server uses it on your behalf, and requests count against that key's plan like any other API call. The database tools need a key with the `db.download` scope, which your organization's `Default` key has. The Codex CLI, its IDE extension and Codex in the ChatGPT desktop app read the same configuration, so one install covers all three. You need a VPNDetection account for this, but no paid plan: without one, every lookup returns `ip` and `is_vpn` with Tor and relay detection, whether it is anycast, its reverse DNS name, where the address is and the network that announces it, and the account's trial returns every field.
+The last line signs you in with your VPNDetection account, where you pick the API key Codex should use. Codex never sees the key: our MCP server uses it on your behalf, and requests count against that key's plan like any other API call. The database tools need a key with the `db.download` scope, which your organization's `Default` key has. The Codex CLI, its IDE extension and Codex in the ChatGPT desktop app read the same configuration, so one install covers all three. You need a VPNDetection account for this, but no paid plan: without one, every lookup returns `ip` and `is_vpn` with Tor and relay detection, whether it is anycast or a bot uses it, its reverse DNS name, where the address is and the network that announces it, and the account's trial returns every field.
 
 To disconnect Codex, run `codex mcp logout vpndetection`, or remove it under Connected applications at https://app.vpndetection.io/settings/account/sessions. Access ends within about a minute.
 
