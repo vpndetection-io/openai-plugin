@@ -2,6 +2,12 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.4.1 - 2026-11-23
+
+### Fixes
+
+- A bot's operator is only claimed unless it's verified ([`77bb146`](https://github.com/vpndetection-io/openai-plugin/commit/77bb146387312afcb9e38f9d88ed2848ee813549))
+
 ## 1.4.0 - 2026-11-22
 
 ### Features
