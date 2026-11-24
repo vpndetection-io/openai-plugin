@@ -2,6 +2,16 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.5.0 - 2026-11-24
+
+### Features
+
+- check-ips and review-traffic check the user agent an address sent ([`f1c2a53`](https://github.com/vpndetection-io/openai-plugin/commit/f1c2a53ea4d6fdf8838e4d8da9aa4f1c4f2063e3))
+
+### Fixes
+
+- README: the full logo in the footer, light and dark ([`0de639a`](https://github.com/vpndetection-io/openai-plugin/commit/0de639a3acccb498ce810e0e6e5e1abe39a09c3c))
+
 ## 1.4.1 - 2026-11-23
 
 ### Fixes
