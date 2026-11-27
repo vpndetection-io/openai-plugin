@@ -2,6 +2,12 @@
 
 What each release changed for you, newest first. Each line is a commit's summary, linked to its full description and diff.
 
+## 1.5.1 - 2026-11-27
+
+### Fixes
+
+- review-traffic and the README: a bot and the network's type are a paid plan's ([`0877104`](https://github.com/vpndetection-io/openai-plugin/commit/087710478e9e2543f5118153cc31a44ce0b82996))
+
 ## 1.5.0 - 2026-11-24
 
 ### Features
